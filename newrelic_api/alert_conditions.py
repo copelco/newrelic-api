@@ -130,7 +130,7 @@ class AlertConditions(Resource):
 
         data = {
             'condition': {
-                'condition_type': condition_type or target_condition['condition_type'],
+                'type': condition_type or target_condition['type'],
                 'name': name or target_condition['name'],
                 'enabled': enabled or target_condition['enabled'],
                 'entities': entities or target_condition['entities'],
